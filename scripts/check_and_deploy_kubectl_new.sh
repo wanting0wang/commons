@@ -86,7 +86,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: $PORT
+    - port: 3838
   selector:
     app: $NAME
 EOF
