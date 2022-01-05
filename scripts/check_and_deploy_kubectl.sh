@@ -233,7 +233,7 @@ fi
 echo "=========================================================="
 echo "DEPLOYING using manifest"
 set -x
-kubectl apply --namespace ${CLUSTER_NAMESPACE} -f ${DEPLOYMENT_FILE} 
+kubectl apply -f ${DEPLOYMENT_FILE} 
 set +x
 # Extract name from actual Kube deployment resource owning the deployed container image 
 # Ensure that the image match the repository, image name and tag without the @ sha id part to handle
