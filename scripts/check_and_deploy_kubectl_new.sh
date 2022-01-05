@@ -18,6 +18,7 @@ if [ -z IMAGE ]; then
   exit 1
 fi
 
+PORT=3838
 
 echo ""
 echo "Deploy environment variables:"
