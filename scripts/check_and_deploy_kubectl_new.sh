@@ -96,6 +96,7 @@ EOF
 echo "$DEPLOYMENT" > $DEPLOYMENT_FILE
 sed -i 's/$NAME/'"$NAME"'/g' $DEPLOYMENT_FILE
 sed -i 's=$IMAGE='"$IMAGE"'=g' $DEPLOYMENT_FILE
+sed -i 's/$PORT/'"$PORT"'/g' $DEPLOYMENT_FILE
 
 # Show the file that is about to be executed
 echo ""
